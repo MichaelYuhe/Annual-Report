@@ -272,7 +272,7 @@ img {
   border-radius: .5rem;
 }
 
-/* ===== SKILLS =====*/
+/* ===== skills =====*/
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -527,4 +527,21 @@ img {
   .home__img {
     width: 450px;
   }
+}
+
+@keyframes typing {
+  from {width: 0;}
+}
+
+@keyframes caret {
+  50% {border-right-color: transparent;}
+}
+
+.typing-text {
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.5rem;
+  animation: typing 3s steps(15) infinite,
+             caret 1s steps(1) infinite;
 }
